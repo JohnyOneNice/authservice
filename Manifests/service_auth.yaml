@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: auth-service  # Имя сервиса для DNS-записи в кластере
+  labels:
+    app: auth-service
+spec:
+  selector:
+    app: auth-service  # Связь с Pods из Deployment
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80         # Порт сервиса
+      targetPort: 8080 # Порт контейнера
+  type: ClusterIP      # Для внутреннего доступа

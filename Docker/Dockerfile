@@ -1,4 +1,4 @@
 FROM amazoncorretto:17-alpine
-COPY authservice.jar.jar authproject.jar
+COPY authservice5.jar authproject5.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","authproject.jar"]
+ENTRYPOINT ["java","-jar","authproject5.jar"]

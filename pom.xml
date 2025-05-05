@@ -29,10 +29,6 @@
             <artifactId>spring-boot-starter-security</artifactId>
             <version>3.4.3</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
 
         <!-- JWT -->
         <dependency>
@@ -60,18 +56,11 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- PostgreSQL -->
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>42.7.5</version>
-        </dependency>
-
         <!-- Feign Client (для вызова userservice) -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
-            <version>4.1.1</version>
+            <version>4.2.1</version>
         </dependency>
 
         <!-- Actuator (опционально) -->

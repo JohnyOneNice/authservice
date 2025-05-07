@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient(name = "user-service", url = "${user-service.url}") // URL из application.properties
 public interface UserClient {
 
-    @GetMapping("/api/user/username/{username}")
+    @GetMapping("/api/user/internal/username/{username}")
     UserResponse getUserByUsername(@PathVariable String username);
 }

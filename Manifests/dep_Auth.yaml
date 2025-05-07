@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: auth-service
-          image: johnynice/authproject5:1
+          image: johnynice/authproject10:1
           ports:
             - containerPort: 8080  # Порт контейнера
